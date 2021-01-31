@@ -1,0 +1,28 @@
+.aslan{
+	background-color:RGBA(222,111,221,0.6);
+	border-style:solid;
+	border-width:5px;
+	border-color:red;
+	border-radius:10px;
+	transition:all 0.5s;
+
+}
+.aslan:hover{
+	border-top-style:dotted;
+	border-right-style:double;
+	border-bottom-style:dashed;
+	border-left-style:solid;
+	
+	padding:50px 10px;
+	
+}
+.aslan:active{
+	border-color:#abcdef RGB(200,230,255) green RGBA(28,255,86,0.5);
+	border-width:8px 25px 15px 10px;
+	
+	border-radius:200px;
+}
+td:hover{
+	
+	
+}

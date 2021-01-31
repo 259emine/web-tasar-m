@@ -1,0 +1,73 @@
+<html>
+ <head>
+    <title>FORM İŞLEMLERİ</title>
+     <meta charset="utf8"/>
+	 
+	 <script>
+		function SelamSoyle(){
+			alert("selam Millet");
+		
+		
+		}
+	 function GondereyimMİ (){
+		confirm("Verileri Göndermek İstediğini Emin misin?);
+	 
+	 }
+	 
+	 </script>
+  </head>
+<body>
+<form action="verial.php" novalidate onreset="SileyimMİ();" onsubmit="GondereyimMİ();"  method="POST">
+	<label for="ad">Adınızı Girin:</label>
+	<input type="text" id="ad" pattern="[A-Za-z]{2,}" title="Ad harflerden oluşmalı" value="Gaziantep" name="adi" />
+	<br><br>
+	
+	
+	<label for="sad">Soyadınızı Girin:</label>
+	<input type="text" required id="sad" value="" maxlength="10" size="10" name="sadi" />
+	<br><br>
+	
+	
+	
+	<label for="yas">Yaşınızı Girin:</label>
+	<input type="text" id="yas" value="" name="yas" />
+	<br><br>
+	
+	
+	<label for="tc">TC Girin:</label>
+	<input type="text" id="tc" value="" required  pattern="[0-9]{11}"   placeholder="TC KİMLİK GİRİN" name="tc" />
+	<br><br>
+	
+	
+	<label for="tc">ŞİFRENİZİ Girin:</label>
+	<input type="password" id="sfr" value="" placeholder="ŞİFRE GİRİN" name="sfr" />
+	<br><br>
+	
+	
+	CİNSİYETİNİZİ SEÇİN :
+	<input type="radio" name="cins" id="erk" value="ERKEK"/> <label for="erk">ERKEK
+	<input type="radio" name="cins"  id="kdn" value="KADIN"/> <label for="kdn">KADIN
+	<br><br>
+	
+	HOBİLERİNİZİ SEÇİN : <br>
+	<input type="checkbox" name="hb" value="kitap" id="hb1" ><label for="hb1">KİTAP OKUMAK</label><br>
+	<input type="checkbox" name="hb" value="spor" id="hb1" ><label for="hb2">SPOR YAPMAK</label><br>
+	<input type="checkbox" name="hb" value="kod" id="hb1" ><label for="hb3">KOD YAZMAK</label><br>
+	<input type="checkbox" name="hb" value="tasarım" id="hb1" ><label for="hb4">TASARIM YAPMAK</label><br>
+	
+	<br><br>
+	<input type="date" name="dgunu" max="2021-12-31" min="2000-
+	
+	<label for="tc">TELEFON GİRİN:</label>
+	<input type="password" id="tel"  placeholder="0(312) 312 1212" pattern="/d/(/d/d/d) /d/d/" name="tel" />
+	<br><br>
+	
+	<input type="button" onmouseup="SelamSoyle();" name="btn" value="Gönder"/>
+	<input type="submit" name="btn" value="Gönder"/>
+	<input type="reset" name="btn" value="sil"/>
+
+
+</form>
+
+</body>
+</html>

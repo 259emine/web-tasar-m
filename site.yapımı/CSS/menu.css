@@ -1,0 +1,242 @@
+@charset "utf8";
+
+
+*{
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	margin:0px;
+	padding:0px;
+}
+
+#gunes{
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	
+	background-image: url("../menu_Resimler/sun.gif");
+	background-origin: border-box;
+	background-position: center;
+	background-size: 299px;
+	z-index:90;
+	position:absolute;
+	
+	box-shadow:0 0 20px 10px #4c0e0e,0 0 30px 30px #f87839, 0 0 50px 50px #ff0;
+
+	
+	transform: translate(-100px,-100px);
+	transition:all 0.5s;
+	
+	transition-delay:1.2s;
+	
+}
+
+#gun:checked + label #gunes{
+	
+	
+	transform: translate(200px,200px);
+	
+	transition-delay:0s;
+}
+
+#gun:checked ~ #eksen{
+	
+	
+	transform: translate(100px,100px);
+	
+	margin-top:100px;
+	margin-left:100px;
+	
+	transition-delay:0s;
+}
+
+#eksen{
+	width:400px;
+	height:400px;
+	border-radius:400px;
+	border:2px solid #ddeeff;
+	border-radius:400px;
+	position:absolute;
+	
+	z-index:10;
+
+	transform: translate(-200px,-200px);
+	transition:all 0.5s;
+	
+	margin-top:-200px;
+	margin-left:-200px;
+	
+	transition-delay:1.2s;
+	
+	
+	animation-name:donbebegim;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	
+}
+
+
+#eksen:hover{
+	animation-play-state:paused;
+}
+
+
+
+.gezegen{
+	width:75px;
+	height:75px;
+	border-radius:200px;
+	
+	background-origin: border-box;
+	background-position: center;
+	background-size: 299px;
+	position:absolute;
+	
+	transform: translate(160px,160px);
+	transition:all 0.5s;
+	transition-delay:0.5s!important;
+	
+}
+
+
+
+
+#eksen #merkur{
+	background-image: url("../menu_Resimler/merkur.gif");
+	background-size: 107px;
+	transition-delay:0.3s!important;
+}
+
+#eksen #venus{
+	background-image: url("../menu_Resimler/venus.gif");
+	background-size: 131px;
+	
+	transition-delay:0.4s!important;
+}
+
+#eksen #dunya{
+	background-image: url("../menu_Resimler/dunya.gif"); 
+	background-size: 120px;
+	
+	transition-delay:0.5s!important;
+}
+
+
+
+#eksen #mars{
+	background-image: url("../menu_Resimler/mars.gif");
+		background-size: 90px;
+	
+	transition-delay:0.6s!important;
+}
+
+
+#eksen #jupiter{
+	background-image: url("../menu_Resimler/jupyter.gif");
+	background-size: 90px;
+	
+	transition-delay:0.7s!important;
+}
+
+
+
+#eksen #saturn{
+	background-image: url("../menu_Resimler/saturn.gif");
+		background-size: 180px;
+	
+	transition-delay:0.8s!important;
+}
+
+
+
+#eksen #uranus{
+	background-image: url("../menu_Resimler/uranus.gif"); 
+	background-size: 155px;
+	
+	transition-delay:0.9s!important;
+}
+
+#eksen #neptun{
+	background-image: url("../menu_Resimler/neptun.gif");
+		background-size: 180px;
+	
+	transition-delay:1s!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gun:checked ~ #eksen #merkur{
+	transform: translate(160px,-35px);
+}
+
+#gun:checked ~ #eksen #venus{
+	transform: translate(300px,20px);
+}
+
+#gun:checked ~ #eksen #dunya{
+	  transform: translate(360px,160px);
+}
+
+
+
+#gun:checked ~ #eksen #mars{
+	transform: translate(300px,300px);
+}
+
+
+#gun:checked ~ #eksen #jupiter{
+	
+	transform: translate(160px,360px);
+}
+
+
+
+#gun:checked ~ #eksen #saturn{
+	transform: translate(25px,300px);
+}
+
+
+
+#gun:checked ~ #eksen #uranus{
+	transform: translate(-35px,160px);
+}
+
+#gun:checked ~ #eksen #neptun{
+	
+	transform: translate(25px,25px);
+}
+
+
+
+
+
+@keyframes donbebegim{
+	
+	from{
+		transform:rotateZ(0deg);
+	}
+	
+	to{
+		transform:rotateZ(360deg);
+	}
+}
+
+
+
+
